@@ -1,6 +1,6 @@
 {
   "name": "graphql-scalar-encrypted-field",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A GraphQL Scalar Type which implements field-level encryption",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
