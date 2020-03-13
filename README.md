@@ -6,8 +6,6 @@ key and iv object.
 
 ## Usage
 
-1. Register the 
-
 Regular Node imports:
 
 ```
