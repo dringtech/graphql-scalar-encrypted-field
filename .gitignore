@@ -1,0 +1,8 @@
+# Libraries
+node_modules/
+
+# Test reports and so forth
+reports/
+
+# Compiled thingumabobs
+lib/

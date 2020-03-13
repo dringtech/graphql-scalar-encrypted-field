@@ -1,0 +1,55 @@
+{
+  "name": "graphql-scalar-encrypted-field",
+  "version": "0.1.0",
+  "description": "A GraphQL Scalar Type which implements field-level encryption",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "prebuild": "rimraf ./lib",
+    "build": "tsc --project tsconfig.build.json",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand"
+  },
+  "keywords": [
+    "GraphQL",
+    "AES",
+    "cipher",
+    "field",
+    "encryption"
+  ],
+  "author": "Giles Dring <giles@dringtech.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@types/crypto-js": "^3.1.43",
+    "crypto-js": "^4.0.0",
+    "graphql": "^14.6.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "jest": "^25.1.0",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "coverageDirectory": "../reports/coverage",
+    "collectCoverageFrom": [
+      "**/*"
+    ],
+    "testEnvironment": "node"
+  }
+}
